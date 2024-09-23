@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="그룹 생성이 완료되었습니다!"
+        android:fontFamily="@font/nanum4"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+
+    <Button
+        android:id="@+id/btnGoToHome"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="홈으로 돌아가기"
+        android:fontFamily="@font/nanum3"
+        android:backgroundTint="#24019D"
+        android:textColor="#ffffff"
+        android:textSize="13dp"/>
+
+    <include
+        layout="@layout/view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+</LinearLayout>

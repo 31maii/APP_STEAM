@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#24019D"
+        android:layout_gravity="center"
+        android:gravity="center|left">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/nanum4"
+            android:gravity="center|left"
+            android:text="진행 중인 내 활동"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:paddingLeft="5dp"/>
+
+        <ImageButton
+            android:id="@+id/btnApplyResult"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_notifications_active_24" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp">
+
+        <!-- 진행중인 스터디 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/edit"
+                android:layout_weight="9"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:gravity="center|left"
+                android:text="스터디"
+                android:fontFamily="@font/nanum4"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17dp"/>
+        </LinearLayout>
+
+
+        <!-- 자신이 진행인 스터디 나타낼 레이아웃.
+        데베 연결하여 레이아웃이 동적으로 추가 되어져야 함.
+        레이아웃 디자인 샘플은 다음과 같음 -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border_rec"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:id="@+id/layoutStudy"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_margin="3dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border_rec_thin"
+                    android:padding="3dp">
+                    <TextView
+                        android:id="@+id/txtgName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="토마토익쟁이"
+                        android:textSize="17dp"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/nanum3"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"/>
+                    <ImageButton
+                        android:id="@+id/btnEnterGroup"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/chevron_right"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+        <!-- 진행중인 팀프로젝트 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/laptop"
+                android:layout_weight="9"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:gravity="center|left"
+                android:text="팀 프로젝트"
+                android:fontFamily="@font/nanum4"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17dp"/>
+        </LinearLayout>
+
+
+
+        <!-- 자신이 진행인 팀 프로젝트 나타낼 레이아웃.
+        데베 연결하여 레이아웃이 동적으로 추가 되어져야 함.
+        레이아웃 디자인 샘플은 다음과 같음 -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border_rec"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:id="@+id/layoutTeamProject"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_margin="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/border_rec_thin"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanum3"
+                        android:gravity="center|left"
+                        android:text="모바일 프로그래밍 3조"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/btnGroupEnter1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/chevron_right"
+                        android:gravity="center" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+    <!-- 하단바(버튼) -->
+    <LinearLayout
+        android:id="@+id/bottomBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/homeBar"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_design_03"
+            android:src="@drawable/ic_home"/>
+
+        <ImageButton
+            android:id="@+id/joinBar"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_join"
+            android:background="@drawable/button_design_03"/>
+
+        <ImageButton
+            android:id="@+id/memoBar"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_edit_note_24"
+            android:background="@drawable/button_design_03"/>
+
+        <ImageButton
+            android:id="@+id/mypageBar"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_mypage"
+            android:background="@drawable/button_design_03"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

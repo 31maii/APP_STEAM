@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/nanum4"
+        android:padding="5dp"
+        />
+    <EditText
+        android:id="@+id/edtMemoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center|left"
+        android:fontFamily="@font/nanum3"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:inputType="text"
+        android:ems="15"
+        android:hint="최대 15자까지 입력 가능"
+        android:background="@drawable/edittext_design_02"
+        android:theme="@style/AppTheme"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/content"
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/nanum4"
+        android:padding="5dp"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:id="@+id/edtMemoContent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="@string/limit"
+        android:background="@drawable/edittext_design_02"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:fontFamily="@font/nanum3"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:ems="500"
+        android:theme="@style/AppTheme"
+        />
+
+</LinearLayout>

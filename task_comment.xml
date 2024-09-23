@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Comment"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:fontFamily="@font/nanum4"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/txtCommentName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:text="PPT 수정 요청"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:background="@drawable/border_rec_thin"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center|left"
+        android:fontFamily="@font/nanum3"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="작성자"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:fontFamily="@font/nanum4"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/txtCommentWriter"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:text="이진명"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:background="@drawable/border_rec_thin"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center|left"
+        android:fontFamily="@font/nanum3"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Comment 내용"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:fontFamily="@font/nanum4"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/txtCommentContent"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        android:text="PPT 3, 5, 7 페이지 오타 수정 및 10페이지 사진 크기 조절 요청"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:background="@drawable/border_rec_thin"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center|left"
+        android:fontFamily="@font/nanum3"
+        />
+
+    <include
+        layout="@layout/view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+
+
+
+</LinearLayout>

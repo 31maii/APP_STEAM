@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="그룹 참여 신청이 완료되었습니다!"
+        android:textSize="20dp"
+        android:fontFamily="@font/nanum4"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnGoToHome2"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="#24019D"
+            android:fontFamily="@font/nanum3"
+            android:padding="10dp"
+            android:text="홈으로 돌아가기"
+            android:textColor="#ffffff"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/btnMoreGroup1"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="그룹 참여 더보기"
+            android:fontFamily="@font/nanum3"
+            android:backgroundTint="#24019D"
+            android:textSize="13dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    <include
+        layout="@layout/view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+</LinearLayout>

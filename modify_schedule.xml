@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp"
+        android:fontFamily="@font/nanum4"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:text="일정명"
+        />
+
+    <EditText
+        android:id="@+id/edtScheduleName2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="최대 12글자 입력 가능"
+        android:padding="10dp"
+        android:background="@drawable/edittext_design_02"
+        android:layout_marginTop="8dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/nanum3"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:theme="@style/AppTheme"
+        android:ems="12"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="17dp"
+        android:fontFamily="@font/nanum4"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:text="일정 구분"
+        />
+
+    <RadioGroup
+        android:id="@+id/RScheduleType2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+        <RadioButton
+            android:id="@+id/rIndividualSchedule2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="개인"
+            android:textSize="15dp"
+            android:checked="true"
+            android:fontFamily="@font/nanum3"
+            android:background="@drawable/radiobutton_design_01"
+            android:textColor="#000000"
+            android:button="@null"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/rGroupSchedule2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="그룹"
+            android:textSize="15dp"
+            android:fontFamily="@font/nanum3"
+            android:background="@drawable/radiobutton_design_01"
+            android:textColor="#000000"
+            android:button="@null"
+            android:gravity="center"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="17dp"
+        android:fontFamily="@font/nanum4"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:text="날짜"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/edittext_design_02"
+        android:paddingRight="5dp"
+        android:layout_marginTop="8dp"
+        >
+        <TextView
+            android:id="@+id/tvScheduleDate2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:fontFamily="@font/nanum3"
+            android:layout_gravity="center"
+            />
+        <ImageButton
+            android:id="@+id/btnChoiceScheduleDate2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/nanum3"
+            android:backgroundTint="@color/subcolor_2"
+            android:background="@drawable/calendar"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="17dp"
+        android:fontFamily="@font/nanum4"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:text="시작 시간"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/edittext_design_02"
+        android:paddingRight="5dp"
+        android:layout_marginTop="8dp"
+        >
+        <TextView
+            android:id="@+id/tvStartTime2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:fontFamily="@font/nanum3"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            />
+
+        <ImageButton
+            android:id="@+id/btnStartTime2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/subcolor_2"
+            android:layout_gravity="center"
+            android:background="@drawable/clock"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="17dp"
+        android:fontFamily="@font/nanum4"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:text="종료 시간"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/edittext_design_02"
+        android:paddingRight="5dp"
+        android:layout_marginTop="8dp"
+
+        >
+        <TextView
+            android:id="@+id/tvEndTime2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:fontFamily="@font/nanum3"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            />
+        <Button
+            android:id="@+id/btnEndTime2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/subcolor_2"
+            android:layout_gravity="center"
+            android:background="@drawable/clock"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnCancelModifySchedule1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="취소"
+            android:layout_marginRight="5dp"
+            android:textSize="13dp"
+            android:fontFamily="@font/nanum3"
+            android:backgroundTint="#24019D"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/btnModifySchedule1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="13dp"
+            android:fontFamily="@font/nanum3"
+            android:backgroundTint="#24019D"
+            android:textColor="#ffffff"
+            android:text="수정"/>
+
+
+    </LinearLayout>
+    <include
+        layout="@layout/view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+
+
+</LinearLayout>

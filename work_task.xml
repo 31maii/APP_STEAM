@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Task 제목"
+            android:textSize="20dp"
+            android:textColor="@color/subcolor_2"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nanum4"
+            android:padding="5dp"
+            android:id="@+id/txtTaskTitle2"
+            />
+        <TextView
+            android:id="@+id/txtTaskContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="#3c3c3c"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:padding="7dp"
+            android:text="모바일프로그래밍 중간발표 준비 (task 내용)"
+            android:fontFamily="@font/nanum3"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/subcolor_2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="기간"
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:fontFamily="@font/nanum4"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:id="@+id/txtTaskExpirationDate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="13dp"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:background="@drawable/border_rec_thin"
+            android:text="시작일 ~ 마감일"
+            android:fontFamily="@font/nanum3"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To Do"
+                android:textSize="17dp"
+                android:textColor="#000000"
+                android:layout_weight="1"
+                android:fontFamily="@font/nanum4"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:padding="5dp"
+                />
+            <ImageButton
+                android:id="@+id/btnMakeToDo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:backgroundTint="@color/subcolor_2"
+                android:background="@drawable/circle_add"
+                android:visibility="invisible"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_ToDo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_rec"
+            android:padding="3dp"
+            >
+            <!-- 여기에 To do 각 항목들의 이름을 하나씩 텍스트뷰로 보여줄것 -->
+            <TextView
+                android:id="@+id/txtToDo1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="중간 보고서 작성"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:background="@drawable/border_rec_thin"
+                android:fontFamily="@font/nanum3"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comment"
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:fontFamily="@font/nanum4"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:padding="5dp"
+            />
+
+
+        <ScrollView
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/border_rec"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/layout_Comment"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:padding="3dp">
+                <!-- 여기에 등록된 comment의 이름을 하나씩 텍스트뷰로 보여줄것 -->
+
+                <TextView
+                    android:id="@+id/txtComment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="PPT 수정 요청"
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:padding="5dp"
+                    android:background="@drawable/border_rec_thin"
+                    android:fontFamily="@font/nanum3"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <EditText
+                android:id="@+id/edtComment"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:hint="comment를 입력하세요"
+                android:fontFamily="@font/nanum3"
+                android:layout_gravity="center"
+                android:theme="@style/AppTheme"
+                android:textColor="#000000"
+                android:layout_marginRight="3dp"
+                android:gravity="center|left"
+                />
+            <Button
+                android:id="@+id/btnMakeComment"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="등록"
+                android:fontFamily="@font/nanum3"
+                android:backgroundTint="#24019D"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

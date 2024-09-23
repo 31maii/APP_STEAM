@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To Do Name"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:fontFamily="@font/nanum4"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        />
+
+    <EditText
+        android:id="@+id/edtModifyTodoName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_design_02"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:fontFamily="@font/nanum3"
+        android:layout_gravity="center"
+        android:theme="@style/AppTheme"
+        android:inputType="text"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To Do 내용"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:fontFamily="@font/nanum4"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        />
+
+    <EditText
+        android:id="@+id/edtModifyTodoContent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_design_02"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/nanum3"
+        android:paddingLeft="10dp"
+        android:theme="@style/AppTheme"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="담당자 (여러 명인 경우 /로 구분)"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:fontFamily="@font/nanum4"
+        android:layout_marginTop="15dp"
+
+        />
+
+    <!-- 담당자 EditText로 입력받을지 Selector로 선택할 수 있게 할 것인지 DB연동 후 고민 -->
+    <EditText
+        android:id="@+id/edtModifyTodoInCharge"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_design_02"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/nanum3"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center"
+        android:theme="@style/AppTheme"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="마감일"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nanum4"
+        android:padding="5dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/border_rec_thin"
+        android:paddingRight="5dp"
+        android:layout_marginTop="8dp"
+        >
+        <TextView
+            android:id="@+id/txtModifyToDoDate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:fontFamily="@font/nanum3"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:gravity="center|left"
+            />
+        <ImageButton
+            android:id="@+id/btnChoiceModifyToDoDate"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textSize="16dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/calendar"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/subcolor_2"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnEnrollModifyToDo"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="수정"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#24019D"
+        android:textSize="13dp"
+        android:fontFamily="@font/nanum3"
+        android:padding="5dp"
+        android:textColor="#ffffff"
+        />
+    <include
+        layout="@layout/view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+
+
+</LinearLayout>

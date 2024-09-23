@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_weight="3"
+        android:background="#6BE8E8E8"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_mark"/>
+
+        <TextView
+            android:id="@+id/tvGName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="모바일 프로그래밍 3조"
+            android:fontFamily="@font/nanum4"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="right"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/laptop"/>
+
+            <TextView
+                android:id="@+id/tvGType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="팀 프로젝트"
+                android:layout_marginRight="12dp"
+                android:fontFamily="@font/nanum3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="#3C3C3C"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/users"/>
+
+            <TextView
+                android:id="@+id/tvGNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2/3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/nanum3"
+                android:layout_marginRight="12dp"
+                android:textSize="15dp"
+                android:textColor="#3C3C3C"/>
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/lock"/>
+
+            <TextView
+                android:id="@+id/tvLock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비공개"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/nanum3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="#3C3C3C"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" 그룹 구성원"
+        android:fontFamily="@font/nanum3"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:gravity="left|center"
+        android:drawableLeft="@drawable/ic_circle"
+        android:padding="5dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:id="@+id/layoutMember"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="@drawable/border_rec">
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:id="@+id/btnChangeLeader"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="팀장 변경"
+        android:backgroundTint="@color/maincolor"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:layout_margin="30dp"
+        android:fontFamily="@font/nanum3"
+        />
+
+
+
+
+</LinearLayout>

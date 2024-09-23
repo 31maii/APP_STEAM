@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/edtSearch1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:hint="그룹을 입력하시오"
+                android:fontFamily="@font/nanum3"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:textSize="17dp"
+                android:padding="10dp"
+                android:background="@drawable/edittext_design_02"
+                android:theme="@style/AppTheme"
+                android:inputType="text"
+                android:imeOptions="actionSearch"
+                />
+
+            <ImageButton
+                android:id="@+id/imgBtnSearch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:background="@drawable/button_design_02"
+                android:layout_gravity="center"
+                android:src="@drawable/search"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tvToeic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="토익"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="6dp"
+                android:fontFamily="@font/nanum2"
+                android:textColor="#24019D"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:id="@+id/tvCertificate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자격증"
+                android:fontFamily="@font/nanum2"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:textColor="#24019D"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:id="@+id/tvContest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공모전"
+                android:fontFamily="@font/nanum2"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:textColor="#24019D"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:id="@+id/tvSchoolTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="학교 시험 대비"
+                android:fontFamily="@font/nanum2"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:textColor="#24019D"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:id="@+id/tvTeamplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="팀플"
+                android:fontFamily="@font/nanum2"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:textColor="#24019D"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:id="@+id/tvEtc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기타"
+                android:fontFamily="@font/nanum2"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:textColor="#24019D"
+                android:textSize="13dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_groups"
+                android:layout_gravity="center"
+                android:layout_weight="9"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:gravity="center|left"
+                android:text="모집중인 그룹"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nanum3"
+                android:textColor="#000000"
+                android:textSize="17dp"/>
+
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border_rec"
+            android:layout_marginTop="4dp">
+
+            <LinearLayout
+                android:id="@+id/searchGroupLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_rec_thin"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:columnCount="4"
+                        android:rowCount="2"
+                        android:layout_gravity="center">
+                        <TextView
+                            android:layout_column="0"
+                            android:layout_row="0"
+                            android:layout_columnSpan="4"
+                            android:layout_gravity="fill_horizontal"
+                            android:text="토마토익쟁이"
+                            android:fontFamily="@font/nanum4"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:layout_marginLeft="5dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="0"
+                            android:layout_row="1"
+                            android:text="# 스터디"
+                            android:fontFamily="@font/nanum3"
+                            android:gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:layout_row="1"
+                            android:text="# 토익"
+                            android:gravity="center"
+                            android:fontFamily="@font/nanum3"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:layout_column="2"
+                            android:layout_row="1"
+                            android:drawableLeft="@drawable/ic_groups"
+                            android:text=" 4/6"
+                            android:fontFamily="@font/nanum3"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:layout_marginRight="10dp"/>
+
+                        <ImageView
+                            android:layout_column="3"
+                            android:layout_row="1"
+                            android:layout_gravity="center|left"
+                            android:src="@drawable/ic_lock_open"/>
+
+                    </GridLayout>
+
+                    <Button
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#24019D"
+                        android:fontFamily="@font/nanum3"
+                        android:layout_marginRight="5dp"
+                        android:text="더보기"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_rec_thin"
+                    android:padding="5dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    >
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:columnCount="4"
+                        android:rowCount="2"
+                        android:layout_gravity="center">
+                        <TextView
+                            android:layout_column="0"
+                            android:layout_row="0"
+                            android:layout_columnSpan="4"
+                            android:layout_gravity="fill_horizontal"
+                            android:text="모바일 프로그래밍 3조"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/nanum4"
+                            android:textSize="16dp"
+                            android:textStyle="bold"/>
+
+
+                        <TextView
+                            android:layout_column="0"
+                            android:layout_row="1"
+                            android:text="# 팀 프로젝트"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/nanum3"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:layout_row="1"
+                            android:text="# 팀플"
+                            android:fontFamily="@font/nanum3"
+                            android:gravity="center"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:layout_column="2"
+                            android:layout_row="1"
+                            android:drawableLeft="@drawable/ic_groups"
+                            android:text=" 2/3"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/nanum3"
+                            android:gravity="center"
+                            android:layout_marginRight="10dp"/>
+
+                        <ImageView
+                            android:layout_column="3"
+                            android:layout_row="1"
+                            android:layout_gravity="center|left"
+                            android:src="@drawable/ic_lock"/>
+
+                    </GridLayout>
+
+                    <Button
+                        android:id="@+id/btnMore2"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:backgroundTint="#24019D"
+                        android:fontFamily="@font/nanum3"
+                        android:text="더보기"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnMakeGroup"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="35dp"
+            android:backgroundTint="#24019D"
+            android:textSize="13dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/nanum3"
+            android:text="새로운 그룹 만들기"
+            android:layout_gravity="center"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/homeBar_join"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_design_03"
+            android:src="@drawable/ic_home"/>
+
+        <ImageButton
+            android:id="@+id/joinBar_join"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_join"
+            android:background="@drawable/button_design_03"/>
+
+        <ImageButton
+            android:id="@+id/memoBar_join"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_edit_note_24"
+            android:background="@drawable/button_design_03"/>
+
+        <ImageButton
+            android:id="@+id/mypageBar_join"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_mypage"
+            android:background="@drawable/button_design_03"/>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+
+
+
+</LinearLayout>

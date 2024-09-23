@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#24019D"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/home"
+            android:background="@drawable/button_design_02"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tvGroupName0"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/nanum4"
+            android:gravity="center"
+            android:text="그룹명"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/replay"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/undo"
+            android:background="@drawable/button_design_02"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/border_rec_thin2"
+                        android:layout_margin="10dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/border_edt2">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:text="  중요공지"
+                                android:layout_weight="1"
+                                android:textSize="17dp"
+                                android:paddingLeft="10dp"
+                                android:drawableLeft="@drawable/megaphone"
+                                android:fontFamily="@font/nanum4"
+                                android:textColor="#000000"
+                                android:layout_gravity="center"
+                                android:gravity="center|left"
+                                />
+                            <ImageButton
+                                android:id="@+id/btnImpNotice"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/chevron_right"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"/>
+
+                        </LinearLayout>
+
+
+
+                        <TextView
+                            android:id="@+id/tvRecentInotice"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:textSize="15dp"
+                            android:padding="10dp"
+                            android:fontFamily="@font/nanum3"
+                            android:textColor="#000000"
+                            android:layout_gravity="center"
+                            android:gravity="center|left"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/border_rec_thin2"
+                        android:layout_margin="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="  다가오는 일정"
+                            android:textSize="17dp"
+                            android:background="@drawable/border_edt2"
+                            android:paddingLeft="10dp"
+                            android:drawableLeft="@drawable/calendar"
+                            android:fontFamily="@font/nanum4"
+                            android:textColor="#000000"
+                            android:layout_gravity="center"
+                            android:gravity="center|left"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtSchedule"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textSize="15dp"
+                            android:padding="10dp"
+                            android:fontFamily="@font/nanum3"
+                            android:textColor="#000000"
+                            android:layout_gravity="center"
+                            android:gravity="center|left"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/border_rec_thin2"
+                        android:layout_margin="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="  마감기한"
+                            android:background="@drawable/border_edt2"
+                            android:textSize="17dp"
+                            android:paddingLeft="10dp"
+                            android:drawableLeft="@drawable/clock"
+                            android:fontFamily="@font/nanum4"
+                            android:textColor="#000000"
+                            android:layout_gravity="center"
+                            android:gravity="center|left"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtDeadline"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textSize="15dp"
+                            android:padding="10dp"
+                            android:fontFamily="@font/nanum3"
+                            android:textColor="#000000"
+                            android:layout_gravity="center"
+                            android:gravity="center|left"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#CCCCCC"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/border_rec_thin"
+                    >
+
+                    <Button
+                        android:id="@+id/btnNotice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/notice"
+                        android:drawableLeft="@drawable/pin"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/nanum4"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="13dp"
+                        />
+                    <Button
+                        android:id="@+id/btnAttendance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/attendance"
+                        android:drawableLeft="@drawable/pin"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/nanum4"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="13dp"
+                        />
+                    <Button
+                        android:id="@+id/btnSchedule"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/schedule"
+                        android:drawableLeft="@drawable/pin"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/nanum4"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="13dp"
+                        />
+                    <Button
+                        android:id="@+id/btnWorks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/works"
+                        android:drawableLeft="@drawable/pin"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/nanum4"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="13dp"
+                        />
+                    <Button
+                        android:id="@+id/btnGroupInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="그룹 정보"
+                        android:drawableLeft="@drawable/pin"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/nanum4"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="13dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+                    <Button
+                        android:id="@+id/btnDeleteGroup"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="그룹 삭제"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/nanum3"
+                        android:textSize="13dp"
+                        android:backgroundTint="#24019D"
+                        android:textColor="#ffffff"
+                        />
+                    <Button
+                        android:id="@+id/btnshowApplyList"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="신청 리스트"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/nanum3"
+                        android:textSize="13dp"
+                        android:backgroundTint="#24019D"
+                        android:textColor="#ffffff"
+                        />
+
+                    <Button
+                        android:id="@+id/btnLeaveGroup"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/nanum3"
+                        android:textSize="13dp"
+                        android:backgroundTint="#24019D"
+                        android:textColor="#ffffff"
+                        android:text="그룹 탈퇴하기"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <include
+        layout="@layout/view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</LinearLayout>
+
+

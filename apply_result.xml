@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="수락"
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:fontFamily="@font/nanum4"
+        android:padding="5dp"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/border_rec"
+        android:layout_marginTop="4dp"
+        android:padding="5dp"
+        >
+        <LinearLayout
+            android:id="@+id/layoutConsent"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="거절"
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:fontFamily="@font/nanum4"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/border_rec"
+        android:layout_marginTop="4dp"
+        android:padding="5dp"
+        >
+        <LinearLayout
+            android:id="@+id/layoutDeny"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+        </LinearLayout>
+    </ScrollView>
+    <include
+        layout="@layout/view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#24019D"
+        android:fontFamily="@font/nanum4"
+        android:gravity="center"
+        android:text="출석 관리"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tvAttendDate2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum4"
+            android:text="출석 생성 |   2022.12.10  12:30"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_rec"
+            android:layout_weight="1">
+            <LinearLayout
+                android:id="@+id/layout_attendCheck"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <CheckBox
+            android:id="@+id/chkAttend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="모든 출석 확인 완료 (체크 시 팀장 출석 인정)"
+            android:textColor="#000000"
+            android:fontFamily="@font/nanum3"
+            android:textSize="15dp"
+            android:buttonTint="@color/subcolor_2"
+           />
+
+        <Button
+            android:id="@+id/btnAttendOK"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="확인"
+            android:backgroundTint="#24019D"
+            android:fontFamily="@font/nanum3"
+            android:textSize="13dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:textColor="#ffffff"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

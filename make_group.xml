@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_circle"
+                android:layout_marginBottom="5dp"
+                android:text=" 그룹명"
+                android:fontFamily="@font/nanum4"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:padding="5dp"
+                android:gravity="center|left"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/edtGroupName1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/nanum3"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:background="@drawable/edittext_design_02"
+                android:textSize="15dp"
+                android:theme="@style/AppTheme"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/ic_circle"
+                android:fontFamily="@font/nanum4"
+                android:textColor="#000000"
+                android:layout_marginBottom="5dp"
+                android:text=" 그룹 구분"
+                android:textSize="17dp"
+                android:padding="5dp"
+                android:gravity="center|left"
+                android:layout_gravity="center"/>
+
+
+            <RadioGroup
+                android:id="@+id/RGroupType1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/rStudy1"
+                    android:layout_weight="1"
+                    android:text="스터디"
+                    android:fontFamily="@font/nanum3"
+                    android:textSize="15dp"
+                    android:checked="true"
+                    android:background="@drawable/radiobutton_design_01"
+                    android:textColor="#000000"
+                    android:button="@null"
+                    android:gravity="center"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/rTeamplay1"
+                    android:layout_weight="1"
+                    android:text="팀 프로젝트"
+                    android:fontFamily="@font/nanum3"
+                    android:textSize="15dp"
+                    android:background="@drawable/radiobutton_design_01"
+                    android:textColor="#000000"
+                    android:button="@null"
+                    android:gravity="center"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/ic_circle"
+                android:text=" 카테고리"
+                android:fontFamily="@font/nanum4"
+                android:textColor="#000000"
+                android:layout_marginBottom="5dp"
+                android:textSize="17dp"
+                android:padding="5dp"
+                android:gravity="center|left"
+                android:layout_gravity="center"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <CheckBox
+                        android:id="@+id/chkToeic"
+                        android:text="토익"
+                        android:fontFamily="@font/nanum3"
+                        android:textColor="#000000"
+                        android:layout_marginRight="7dp"
+                        android:textSize="13dp"
+                        android:buttonTint="@color/subcolor_2"/>
+
+                    <CheckBox
+                        android:id="@+id/chkCertificate"
+                        android:text="자격증"
+                        android:fontFamily="@font/nanum3"
+                        android:textColor="#000000"
+                        android:layout_marginRight="7dp"
+                        android:textSize="13dp"
+                        android:buttonTint="@color/subcolor_2"/>
+
+                    <CheckBox
+                        android:id="@+id/chkContest"
+                        android:text="공모전"
+                        android:fontFamily="@font/nanum3"
+                        android:textColor="#000000"
+                        android:layout_marginRight="7dp"
+                        android:textSize="13dp"
+                        android:buttonTint="@color/subcolor_2"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <CheckBox
+                        android:id="@+id/chkSchoolTest"
+                        android:text="학교 시험 대비"
+                        android:fontFamily="@font/nanum3"
+                        android:textColor="#000000"
+                        android:layout_marginRight="7dp"
+                        android:textSize="13dp"
+                        android:buttonTint="@color/subcolor_2"/>
+                    <CheckBox
+                        android:id="@+id/chkTeamplay"
+                        android:text="팀플"
+                        android:fontFamily="@font/nanum3"
+                        android:textColor="#000000"
+                        android:layout_marginRight="7dp"
+                        android:textSize="13dp"
+                        android:buttonTint="@color/subcolor_2"/>
+
+                    <CheckBox
+                        android:id="@+id/chkEtc"
+                        android:layout_width="70dp"
+                        android:buttonTint="@color/subcolor_2"
+                        android:fontFamily="@font/nanum3"
+                        android:text="기타"
+                        android:textColor="@color/black"
+                        android:textSize="13dp">
+
+                    </CheckBox>
+
+
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/ic_circle"
+                android:text=" 그룹 소개"
+                android:fontFamily="@font/nanum4"
+                android:textColor="#000000"
+                android:layout_marginBottom="5dp"
+                android:textSize="17dp"
+                android:padding="5dp"
+                android:gravity="center|left"/>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edtGroupIntroduce1"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="2dp"
+                        android:padding="10dp"
+                        android:fontFamily="@font/nanum3"
+                        android:textColor="#000000"
+                        android:hint="10줄 이내 작성"
+                        android:textSize="15dp"
+                        android:lines="10"
+                        android:background="@drawable/edittext_design_02"
+                        android:theme="@style/AppTheme"
+                        />
+
+                </LinearLayout>
+            </ScrollView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/ic_circle"
+                android:text=" 제한 인원(최소 2명, 최대 50명)"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/nanum4"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:padding="5dp"
+                android:gravity="center|left"/>
+
+            <EditText
+                android:id="@+id/edtNumPeople1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:padding="10dp"
+                android:hint="숫자만 입력 (ex. 5명 -> '5' 입력)"
+                android:fontFamily="@font/nanum3"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:background="@drawable/edittext_design_02"
+                android:inputType="number"
+                android:theme="@style/AppTheme"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"
+                android:drawableLeft="@drawable/ic_circle"
+                android:text=" 그룹 코드 입력"
+                android:padding="5dp"
+                android:fontFamily="@font/nanum4"
+                android:textColor="#000000"
+                android:textSize="17dp"/>
+
+            <EditText
+                android:id="@+id/edtGroupCode1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:padding="10dp"
+                android:hint="생략 가능"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:fontFamily="@font/nanum3"
+                android:textSize="15dp"
+                android:background="@drawable/edittext_design_02"
+                android:theme="@style/AppTheme"
+                android:inputType="text"
+                />
+
+            <Button
+                android:id="@+id/btnMakeGroup2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:text="그룹 생성"
+                android:fontFamily="@font/nanum3"
+                android:backgroundTint="#24019D"
+                android:textSize="13dp"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <include
+        layout="@layout/view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+
+
+
+
+
+</LinearLayout>
